@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RailReserve - Book Your Journey</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+  <header>
+    <h1 id="site-title">🚆 RailReserve</h1>
+    <button id="theme-btn">Toggle Theme</button>
+  </header>
+
+  <!-- ✅ Marquee outside header -->
+  <div class="marquee">
+    <p>🚨 Hurry up! Tickets are being booked. You are on board. 🚆</p>
+  </div>
+
+  <main>
+    <section class="booking-form">
+      <h2>Book Your Train Ticket</h2>
+      <label>From:
+        <select id="from">
+          <option>Chennai</option>
+          <option>Delhi</option>
+          <option>Mumbai</option>
+        </select>
+      </label>
+      <label>To:
+        <select id="to">
+          <option>Bangalore</option>
+          <option>Hyderabad</option>
+          <option>Kolkata</option>
+        </select>
+      </label>
+      <label>Date:
+        <input type="date" id="travel-date" />
+      </label>
+      <label>Passenger Name:
+        <input type="text" id="passenger-name" placeholder="Enter name" />
+      </label>
+      <button id="search-btn">Search Trains</button>
+    </section>
+
+    <!-- ✅ Only one #results box here -->
+    <section id="train-list" class="train-list hidden">
+      <h2>Available Trains</h2>
+      <div id="results" class="train-row"></div>
+    </section>
+
+    <section id="booking-summary" class="hidden">
+      <h2>Booking Summary</h2>
+      <div id="summary-content"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RailReserve. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/dharineesh11" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/dharineesh-s-52009a285/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
